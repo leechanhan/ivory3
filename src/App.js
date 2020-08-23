@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/reset.css';
+import './assets/swiper-4.5.0/dist/css/swiper.min.css';
+import './assets/css/common.css';
+import './assets/css/main.css';
+import './assets/css/search.css';
+import './assets/css/mypage.css';
+import './assets/css/popups.css';
+import './assets/css/main.css';
+import {Header} from "./component/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <Header>
+
+        </Header>
+      </>
   );
 }
 

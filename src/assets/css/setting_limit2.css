@@ -1,0 +1,42 @@
+@charset 'utf-8';
+.view_content_wrap{
+  font-family: 210MGothicOTF030;
+  background:#fff; box-sizing:border-box; border-radius:calc(100vw * (30/640)) calc(100vw * (30/640)) 0 0; margin-top:calc(100vw * (35 / 640)); padding:calc(100vw * (50 / 640)) calc(100vw * (40 / 640)) calc(100vw * (300/640));
+}
+.bg_wrap h1{position: absolute;
+    top: calc(100vw * (56 / 640));
+    left: calc(100vw * (274 / 640));
+}
+h2{font-size:calc(100vw * (23/640));letter-spacing:calc(100vw * (-1.38 / 640));line-height:calc(100vw * (28 / 640))}
+ul.nav li p{font-size:calc(100vw * (18 / 640));line-height:calc(100vw * (21 / 640));margin-top:calc(100vw * (28 / 640))}
+.margin{margin-bottom:calc(100vw * (50 / 640));}
+.main_nav{padding:calc(100vw * (30 / 640)) 0 calc(100vw * (33/640)); border-top:1px solid #000; position:relative;}
+nav{margin-top:calc(100vw *(30 / 640))}
+.nav li:nth-of-type(3){border-bottom:1px solid #000;}
+.main_nav .arrow{ position:absolute; right:calc(100vw * (20 / 6400)); top:calc(100vw * (30 / 640)); width:calc(100vw * (29 / 640)); height:calc(100vw * (20 / 640));}
+.sub_nav{display:none;}
+.sub_nav>li{margin-top:calc(100vw *(10/640));font-size:calc(100vw * (18 / 640));line-height:1.83;letter-spacing:calc(100vw * (-1.08 / 640))}
+.line{width:calc(100vw * (60 / 640)); height:calc(100vw * (1/640)); background:#a2a2a2; margin-top:calc(100vw * (30/640));}
+.sub_nav li{padding:calc(100vw * (20 / 640)) 0;}
+
+@media all and (min-width:820px){
+.view_content_wrap{
+  font-family: 210MGothicOTF030;
+  background:#fff; box-sizing:border-box; border-radius:calc(800px * (30/640)) calc(800px * (30/640)) 0 0; margin-top:calc(800px * (35 / 640)); padding:calc(800px * (50 / 640)) calc(800px * (40 / 640)) calc(800px * (300/640));
+}
+.bg_wrap h1{position: absolute;
+    top: calc(800px * (63 / 640));
+    left: calc(800px * (274 / 640));}
+h2{font-size:calc(800px * (23/640));letter-spacing:calc(800px * (-1.38 / 640));line-height:calc(100vw * (28 / 640))}
+ul.nav li p{font-size:calc(800px * (18 / 640));line-height:calc(800px * (21 / 640));margin-top:calc(800px * (28 / 640))}
+
+.margin{margin-bottom:calc(800px * (50 / 640));}
+.main_nav{padding:calc(800px * (30 / 640)) 0 calc(800px * (33/640));border-top:1px solid #000; position:relative;}
+nav{margin-top:calc(800px *(30 / 640))}
+.nav li:nth-of-type(3){border-bottom:1px solid #000;}
+.main_nav .arrow{ position:absolute; right:calc(800px * (20 / 6400)); top:calc(800px * (30 / 640)); width:calc(800px * (29 / 640)); height:calc(800px * (20 / 640));}
+.sub_nav{display:none;}
+.sub_nav>li{margin-top:calc(800px *(10/640));font-size:calc(100vw * (18 / 640));line-height:1.83;letter-spacing:calc(800px * (-1.08 / 640))}
+.line{width:calc(800px * (60 / 640)); height:calc(800px * (1/640)); background:#a2a2a2; margin-top:calc(800px * (30/640));}
+.sub_nav li{padding:calc(800px * (20 / 640)) 0;}
+}

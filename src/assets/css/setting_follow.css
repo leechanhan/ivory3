@@ -1,0 +1,29 @@
+@charset 'utf-8';
+.view_content_wrap{
+  font-family: 210MGothicOTF030;
+  background:#fff; box-sizing:border-box; border-radius:0; margin:calc(100vw * (35 / 640)) 0 0; padding:calc(100vw * (33 / 640)) calc(100vw * (40 / 640)) calc(100vw * (80 / 640)); border-radius:calc(100vw * (30/640)) calc(100vw * (30/640)) 0 0;}
+.follow_user li{float:left;}
+.follow_user img{width:calc(100vw * (120/640)); height:calc(100vw * (120/640)); margin-bottom:calc(100vw * (27/640));}
+.follow_user h1{font-size:calc(100vw * (24/640)); margin-bottom:calc(100vw * (10/640));}
+.follow_user h1, .follow_user p{width:calc(100vw * (170/640));}
+.follow_user p{color:#6e6e6e;}
+.follow_user .btn{float:right; width:calc(100vw * (65/640)); height:calc(100vw * (65/640)); border-radius:50%; background:#68c0b5; overflow:hidden; box-sizing:border-box;}
+.follow_user .btn p{color:#fff; line-height:calc(100vw * (70/640)); overflow:hidden; margin-left:calc(100vw * (10.5/640)); font-size:calc(100vw * (17/640));}
+.follow_user li:nth-of-type(2){margin-top:calc(100vw * (35/640)); margin-left:calc(100vw * (17/640));}
+.follow_user li:nth-of-type(3){margin-top:calc(100vw * (30/640));}
+.line{border-bottom:1px solid #888; overflow:hidden; margin:calc(100vw * (27/640)) 0; box-sizing:border-box;}
+
+@media all and (min-width:820px){
+.view_content_wrap{
+  font-family: 210MGothicOTF030;
+  background:#fff; box-sizing:border-box; border-radius:0; margin:calc(800px * (35 / 640)) 0 0; padding:calc(800px * (33 / 640)) calc(800px * (40 / 640)) calc(800px * (80 / 640)); border-radius:calc(800px * (30/640)) calc(800px * (30/640)) 0 0;}
+.follow_user li{float:left;}
+.follow_user img{width:calc(800px * (120/640)); height:calc(800px * (120/640)); margin-bottom:calc(800px * (27/640));}
+.follow_user h1{font-size:calc(800px * (24/640)); margin-bottom:calc(800px * (10/640));}
+.follow_user h1, .follow_user p{width:calc(800px * (170/640));}
+.follow_user .btn{float:right; width:calc(800px * (65/640)); height:calc(800px * (65/640)); border-radius:50%; background:#68c0b5; overflow:hidden; box-sizing:border-box;}
+.follow_user .btn p{color:#fff; line-height:calc(800px * (70/640)); overflow:hidden; margin-left:calc(800px * (10.5/640)); font-size:calc(800px * (17/640));}
+.follow_user li:nth-of-type(2){margin-top:calc(800px * (35/640)); margin-left:calc(800px * (17/640));}
+.follow_user li:nth-of-type(3){margin-top:calc(800px * (30/640));}
+.line{border-bottom:1px solid #888; overflow:hidden; margin:calc(800px * (27/640)) 0; box-sizing:border-box;}
+}

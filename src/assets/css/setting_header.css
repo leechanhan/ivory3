@@ -1,0 +1,20 @@
+@charset 'utf-8';
+@font-face{font-family:MG050;
+        src:url(../font/210 M고딕050 OTF.otf) format('otf'), url(../font/210 M고딕050 OTF.ttf) format('true type');}
+.bg_wrap{padding-bottom:calc(100vw * (100 / 640)); position:relative;}
+.back{width: calc(100vw * (24 / 640));
+    height: calc(100vw * (33 / 640));
+    display: block;
+    background-image: url(../img/setting/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; margin-top:calc(100vw * (53 / 640)); margin-left:calc(100vw * (40 / 640)); float:left;}
+.bg_wrap h1{color:#fff; font-size:calc(100vw * (22 / 640)); margin:0 auto; position:absolute; top:calc(100vw * (56 / 640)); left:calc(100vw * (290 / 640)); font-family:MG050;letter-spacing:calc(100vw * (-0.22 / 640))}
+
+@media all and (min-width:820px){
+.bg_wrap{max-width:800px; padding-bottom:calc(800px * (100 / 640));}
+.back{width: calc(800px * (24 / 640));
+    height: calc(800px * (33 / 640));
+	margin-top:calc(800px * (60 / 640));}
+.bg_wrap h1{font-size:calc(800px * (22 / 640)); position:absolute; top:calc(800px * (65 / 640)); left:calc(800px * (290 / 640));letter-spacing:calc(800px * (-0.22 / 640))}
+}

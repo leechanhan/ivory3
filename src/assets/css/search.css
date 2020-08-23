@@ -1,0 +1,1565 @@
+input::placeholder{
+     color:#a5a5a5;
+}
+div#search_wrap{
+     display:block;width:100%;height:auto;padding-bottom:calc(100vw * (220 / 640));
+}
+div#search_wrap div.search_form_wrap{
+     display:block;height:auto;width:100%;position:relative;
+}
+div#search_wrap div.search_form_wrap form.search_form{
+     display:block;width:100%;padding:0 calc(100vw * ( 40 / 640));height:auto;position:relative;padding-top:calc(100vw * (54 / 640));
+}
+div#search_wrap div.search_form_wrap form.search_form input.search_query{
+     font-size:calc(100vw * (20 / 640));color:#000;line-height:1.2;padding-bottom:calc(100vw * (20 / 640));border-bottom:calc(100vw * (3 / 640)) solid #000;width:100%;height:auto;font-family:'MG050';letter-spacing:calc(100vw * (-0.2 / 640))
+}
+div#search_wrap div.search_form_wrap form.search_form input.search_quer::placeholder{
+     color:#a5a5a5
+}
+div#search_wrap div.search_form_wrap form.search_form input.cancle_btn{
+     width:calc(100vw * (23 / 640));height:calc(100vw * (23 / 640));position:absolute;top:calc(100vw * (54 / 640));display:block;right:calc(100vw * (40 / 640));background-image:url('../img/search/cancle_icon.png');background-size:cover;background-position:center;background-color:transparent;
+}
+/*search_function_window css*/
+div#search_wrap div.search_form_wrap section.search_function_window{
+     width:100%;height:auto;position:absolute;left:0;top:100%;background-color:rgba(255,255,255,1.0);padding:calc(100vw * (74 / 640)) calc(100vw * (40 / 640));padding-bottom:calc(100vw * (102 / 640));overflow:hidden;display:none;z-index:80
+}
+div#search_wrap div.search_form_wrap section.search_function_window button.close_btn{
+     width:calc(100vw * (22 / 640));height:calc(100vw * (22 / 640));display:block;right:calc(100vw * (40 / 640));top:calc(100vw * (20 / 640));position:absolute;background-image:url('../img/search/cancle_icon.png');background-size:cover;background-position:center;background-color:transparent;
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords h2{
+     width:100%;height:auto;font-size:calc(100vw * (20 / 640));color:#000;line-height:1.35;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword{
+     padding-top:calc(100vw * (18 / 640));padding-bottom:calc(100vw * (21 / 640));width:100%;height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;border-bottom:calc(100vw * (1 / 640)) solid rgba(0,0,0,0.4);font-family:'MG030'
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword:last-child{
+     border-bottom:calc(100vw * (1 / 640)) solid rgba(0,0,0,1.0);font-family:'MG030'
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword span.keyword{
+     font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;display:block;font-family:'MG030';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword button.del_btn{
+     display:block;font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;background-color:transparent;font-family:'MG030';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords{
+     margin-top:calc(100vw * (74 / 640));
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords h2{
+     width:100%;height:auto;font-size:calc(100vw * (20 / 640));color:#000;line-height:1.35;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords p.search_keyword{
+     padding-top:calc(100vw * (18 / 640));padding-bottom:calc(100vw * (21 / 640));width:100%;height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;border-bottom:calc(100vw * (1 / 640)) solid rgba(0,0,0,0.4);font-family:'MG030';letter-spacing:calc(100vw * (-0.4/ 640))
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords p.search_keyword:last-child{
+     border-bottom:calc(100vw * (1 / 640)) solid rgba(0,0,0,1.0);
+}
+div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords p.search_keyword span.keyword{
+     font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;display:block;letter-spacing:calc(100vw * (-0.4/ 640))
+}
+
+/*검색종류별 페이지 이동*/
+div#search_wrap ul.search_option{
+     margin-top:calc(100vw * (80 / 640));display:block;width:100%;padding:0 calc(100vw * (40 / 640));height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;
+}
+div#search_wrap ul.search_option:after{
+     clear:both;content:'';display:block;
+}
+div#search_wrap ul.search_option li{
+     display:block;width:calc(100vw * (128 / 640));height:calc(100vw * (50 / 640));border-radius:calc(100vw * (30 / 640));margin-right:calc(100vw * ( 8 / 640));border:1px solid rgba(0,0,0,0.5);position:relative;text-align:center;line-height:calc(100vw * (50 / 640));font-size:calc(100vw * (18 / 640));font-family:'MG030';letter-spacing:calc(100vw * (-0.9/ 640));
+}
+div#search_wrap ul.search_option li:last-child{
+     margin-right:0
+}
+div#search_wrap ul.search_option li.active{
+     background-color:#68c0b5;box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);color:white;border:1px solid #68c0b5;font-family:'MG030';letter-spacing:calc(100vw * (-0.18/ 640))
+}
+div#search_wrap ul.search_option li a{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;
+}
+div#search_wrap section.search_result_brand_list{
+     margin-top:calc(100vw * (48 / 640));width:100%;padding:0 calc(100vw * (40 / 640));height:auto;display:block;
+}
+div#search_wrap section.search_result_brand_list h2.search_option_txt{
+     font-size:calc(100vw * (20 / 640));display:block;height:auto;line-height:1.35;color:#000;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4/ 640))
+}
+div#search_wrap section.search_result_brand_list dl.search_items{
+     width:100%;height:auto;display:block;border-bottom:calc(100vw * (1 / 640)) solid rgba(0,0,0,0.5);padding:calc(100vw * (46 / 640)) 0;display:flex;flex-flow:row wrap;justify-content:flex-start;position:relative;
+}
+div#search_wrap section.search_result_brand_list dl.search_items dt.brand_logo{
+     width:calc(100vw * (145 / 640));height:calc(100vw * (75 / 640));border-radius:calc(100vw * (30 / 640));border:1px solid #000;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;
+}
+div#search_wrap section.search_result_brand_list dl.search_items dt.brand_logo img{
+     display:block;width:60%;height:auto;min-height:30%
+}
+div#search_wrap section.search_result_brand_list dl.search_items dd.brand_info{
+     padding-top:calc(100vw * (10 / 640));display:block;width:calc(100vw * (260 / 640));height:auto;padding-left:calc(100vw * (16 / 640));
+}
+div#search_wrap section.search_result_brand_list dl.search_items dd.brand_info h2{
+     font-size:calc(100vw * (22 / 640));line-height:calc(100vw * (27 / 640));color:#000;display:block;width:100%;height:auto;font-family:'MG060';letter-spacing:calc(100vw * (-0.22/ 640));
+}
+div#search_wrap section.search_result_brand_list dl.search_items dd.brand_info p{
+     padding-top:calc(100vw * (6 / 640));display:block;width:100%;height:auto;font-size:calc(100vw * (18 / 640));color:#6e6e6e;line-height:calc(100vw * (21 / 640));font-family:'MG060';letter-spacing:calc(100vw * (-0.36/ 640))
+}
+div#search_wrap section.search_result_brand_list dl.search_items dd.follow_btn{
+     top:calc(100vw * (51 / 640));right:0;position:absolute;width:calc(100vw * (65 / 640));height:calc(100vw * (65 / 640));background-color:#68c0b5;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;color:white; font-size:calc(100vw * (17 / 640));line-height:1.18;border-radius:50%;font-family:'MG040';letter-spacing:calc(100vw * (-1.02 / 640))
+}
+
+/*search_wrap review_rank_list > review_list_wrap_nested_version*/
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version{
+     width:100%;display:block;background-color:#68c0b5;height:auto;transform:translateY(calc(-100vw * (56 / 640)));/*56px만큼의 비율크기로 원래 위치에서 이동한다 relative와 효과 같음*/border-top-left-radius:calc(100vw * (24 / 640));border-top-right-radius:calc(100vw * (24 / 640));box-shadow:0 0 15px 0 rgba(0,0,0,0.6);padding-bottom:calc(100vw * (60 / 640));box-shadow:none;transform:none;border-radius:0;background-color:white;padding-bottom:0;display:none;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap.active section.review_list_wrap_nested_version{
+     display:block;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version h2.tit{
+     width:100%;height:auto;display:block;text-align:center;padding-top:calc(100vw * (56 / 640));padding-bottom:calc(100vw * (48 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version h2.tit img{
+     display:inline-block;width:calc(100vw * (173 / 640));height:calc(100vw * (45 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list{
+     background-color:white;border-radius:calc(100vw * (24 / 640));width:100%;height:auto;padding-top:calc(100vw * (27 / 640));padding-bottom:calc(100vw * (48 / 640))
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list_tab_version{
+     border-radius:0;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual{
+     margin:0 auto;width:calc(100vw * (560 / 640));padding-bottom:calc(100vw * (42 / 640));height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #afafaf;margin-bottom:calc(100vw * (43 / 640));position:relative;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual > a{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information{
+     display:block;width:calc(100vw * (290 / 640));height:auto;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head{
+     height:auto;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img{
+     width:calc(100vw * (75 / 640));height:calc(100vw * (75 / 640));display:block;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img img{
+     width:100%;height:100%;border-radius:50%
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info{
+     width:calc(100vw * (180 / 640));height:auto;display:block;margin-left:calc(100vw * (11 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h2.user_name{
+     padding-top:calc(100vw * (4 / 640));font-size:calc(100vw * (18 / 640));line-height:1.5;width:100%;display:block;font-family:'MG060';color:#6e6e6e;letter-spacing:calc(100vw * (-0.18/ 640))
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h4.review_date{
+     padding-top:calc(100vw * (9 / 640));font-size:calc(100vw * (16 / 640));line-height:1.6;color:#6e6e6e;font-family:'MG030';color:#6e6e6e;letter-spacing:calc(100vw * (-0.16 / 640));font-family:'MG050'
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score{
+     padding-top:calc(100vw * (7 / 640));display:flex;align-items:flex-end;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score::after{
+     display:block;clear:both;content:''
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score{
+     display:block;height:calc(100vw * (21 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score::after{
+     display:block;content:'';clear:both;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li{
+     width:calc(100vw * (22 / 640));height:calc(100vw * (20 / 640));display:block;float:left;margin-right:calc(100vw * (6 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li > img{
+     display:block;width:100%;height:auto;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score span.value{
+     display:block;font-size:calc(100vw * (18 / 640));color:#000;line-height:1.22;font-family:'MG050';color:#000;letter-spacing:calc(100vw * (-1.08 / 640));transform:translateY(10%)
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body{
+     margin-top:calc(100vw * (19 / 640));width:100%;height:auto;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body h2.review_title{
+     width:100%;display:block;font-size:calc(100vw * (23 / 640));color:#000;line-height:1.17;height:calc(100vw * (30 / 640));overflow:hidden;font-family:'MG060';color:#000;white-space:nowrap;text-overflow:ellipsis;letter-spacing:calc(100vw * (-1.38 / 640))
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body p.review_product_item{
+     margin-top:calc(100vw * (11 / 640));color:#5ec4b6;line-height:1.6;font-size:calc(100vw * (17 / 640));font-family:'MG030';letter-spacing:calc(100vw * (-1.02 / 640))
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body h4.extra{
+     margin-top:calc(100vw * (7 / 640));color:#6e6e6e;font-size:calc(100vw * (15 / 640));line-height:1.8;font-family:'MG030';color:#6e6e6e;letter-spacing:calc(100vw * (-0.15 / 640));font-family:'MG050'
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information{
+     width:calc(100vw * (225 / 640));height:auto;position:relative;
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information img.size_ver1{
+     width:100%;height:calc(100vw * (177 / 640));border-radius:calc(100vw * (20 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_review_list_wrap_nested_versionwrap div.review_list article.review_indiviual .review_right_information img.size_ver2{
+     width:100%;height:calc(100vw * (200 / 640));border-radius:calc(100vw * (20 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information dl.like_info{
+     position:absolute;right:calc(100vw * (18 / 640));top:calc(100vw * (18 / 640));display:block;height:calc(100vw * (19 / 640));
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information dl.like_info span.count{
+     display:inline-block;font-size:calc(100vw * (17 / 640));line-height:1.6;color:#5ec4b6;transform:translateY(-15%);font-family:'MG030';letter-spacing:calc(100vw * (-0.17 / 640))
+}
+div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information dl.like_info img.like_icon{
+     display:inline-block;width:calc(100vw * (23 / 640));height:calc(100vw * (19 / 640));margin-left:calc(100vw * (6 / 640));
+}
+
+/*사용자 리뷰리스트*/
+div#search_wrap section.review_list_wrap{
+     width:100%;display:block;background-color:#68c0b5;height:auto;transform:translateY(calc(-100vw * (56 / 640)));/*56px만큼의 비율크기로 원래 위치에서 이동한다 relative와 효과 같음*/border-top-left-radius:calc(100vw * (24 / 640));border-top-right-radius:calc(100vw * (24 / 640));box-shadow:0 0 15px 0 rgba(0,0,0,0.6);padding-bottom:calc(100vw * (60 / 640));position:relative;z-index:3
+}
+div#search_wrap section.review_list_wrap_tab_version{
+     box-shadow:none;transform:none;border-radius:0;background-color:white;padding-bottom:0
+}
+div#search_wrap section.review_list_wrap h2.tit{
+     width:100%;height:auto;display:block;text-align:center;padding-top:calc(100vw * (56 / 640));padding-bottom:calc(100vw * (48 / 640));
+}
+div#search_wrap section.review_list_wrap h2.tit img{
+     display:inline-block;width:calc(100vw * (173 / 640));height:calc(100vw * (45 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list{
+     background-color:white;border-radius:calc(100vw * (24 / 640));width:100%;height:auto;padding-top:calc(100vw * (27 / 640));padding-bottom:calc(100vw * (80 / 640))
+}
+div#search_wrap section.review_list_wrap div.review_list_tab_version{
+     border-radius:0;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual{
+     margin:0 auto;width:calc(100vw * (560 / 640));padding-bottom:calc(100vw * (42 / 640));height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #c7c7c7;margin-bottom:calc(100vw * (43 / 640));position:relative;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual > a{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information{
+     display:block;width:calc(100vw * (290 / 640));height:auto;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head{
+     height:auto;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img{
+     width:calc(100vw * (75 / 640));height:calc(100vw * (75 / 640));display:block;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img img{
+     width:100%;height:100%;border-radius:50%
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info{
+     width:calc(100vw * (180 / 640));height:auto;display:block;margin-left:calc(100vw * (11 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h2.user_name{
+     padding-top:calc(100vw * (4 / 640));font-size:calc(100vw * (18 / 640));line-height:1;width:100%;display:block;font-family:'MG060';letter-spacing:calc(100vw * (-0.18 / 640));color:#6e6e6e
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h4.review_date{
+     padding-top:calc(100vw * (9 / 640));font-size:calc(100vw * (16 / 640));line-height:1;color:#6e6e6e;font-family:'MG050';letter-spacing:calc(100vw * (-0.16 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score{
+     padding-top:calc(100vw * (7 / 640));display:flex;align-items:flex-end;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score::after{
+     display:block;clear:both;content:''
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score{
+     display:block;height:calc(100vw * (21 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score::after{
+     display:block;content:'';clear:both;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li{
+     width:calc(100vw * (22 / 640));height:calc(100vw * (20 / 640));display:block;float:left;margin-right:calc(100vw * (6 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li img{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score span.value{
+     display:block;font-size:calc(100vw * (18 / 640));color:#000;line-height:calc(100vw * (21 / 640));font-family:'MG050';letter-spacing:calc(100vw * (-1.08 / 640));margin-left:calc(100vw * (10 / 640));transform:translateY(10%)
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body{
+     margin-top:calc(100vw * (19 / 640));width:100%;height:auto;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body h2.review_title{
+     width:100%;display:block;font-size:calc(100vw * (23 / 640));color:#000;line-height:calc(100vw * (28 / 640));height:calc(100vw * (30 / 640));overflow:hidden;font-family:'MG060';white-space:nowrap;text-overflow:ellipsis;letter-spacing:calc(100vw * (-1.38 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body p.review_product_item{
+     margin-top:calc(100vw * (11 / 640));color:#5ec4b6;line-height:calc(100vw * (20 / 640));font-size:calc(100vw * (17 / 640));font-family:'MG030';letter-spacing:calc(100vw * (-1.02 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body h4.extra{
+     margin-top:calc(100vw * (7 / 640));color:#6e6e6e;font-size:calc(100vw * (15 / 640));line-height:1;font-family:'MG050';letter-spacing:calc(100vw * (-0.15 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information{
+     width:calc(100vw * (225 / 640));height:auto;position:relative;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information img.size_ver1{
+     width:100%;height:calc(100vw * (177 / 640));border-radius:calc(100vw * (20 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information img.size_ver2{
+     width:100%;height:calc(100vw * (200 / 640));border-radius:calc(100vw * (20 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information dl.like_info{
+     position:absolute;right:calc(100vw * (18 / 640));top:calc(100vw * (18 / 640));display:flex;height:calc(100vw * (19 / 640));flex-flow:row wrap;justify-content:flex-start;align-items:flex-end;
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information dl.like_info span.count{
+     display:inline-block;font-size:calc(100vw * (17 / 640));line-height:1;color:#5ec4b6;font-family:'MG030';letter-spacing:calc(100vw * (-0.17 / 640));
+}
+div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information dl.like_info img.like_icon{
+     display:inline-block;width:calc(100vw * (23 / 640));height:calc(100vw * (19 / 640));margin-left:calc(100vw * (6 / 640));
+}
+
+/*리뷰어 리스트*/
+div#search_wrap section.reviewer_rank_list{
+     margin-top:calc(100vw * (100 / 640));width:100%;height:auto;display:block;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item{
+     width:calc(100vw * (560 / 640));height:auto;display:block;padding-bottom:calc(100vw * (27 / 640));margin:0 auto;margin-bottom:calc(100vw * (21 / 640));border-bottom:1px solid #a8a8a8;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item:last-child{
+     border-bottom:calc(100vw * (3 / 640)) solid #000;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container{
+     width:100%;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;position:relative;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.clown_rank{
+     width:calc(100vw * (95 / 640));height:calc(100vw * (120 / 640));display:block;text-align:center;padding-top:calc(100vw * (26 / 640));
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.clown_rank img{
+     width:calc(100vw * (39 / 640));height:calc(100vw * (24 / 640));display:block;margin:0 auto;background-color:#000;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.clown_rank p.rank_value{
+     width:100%;display:block;margin-top:calc(100vw * (14 / 640));text-align:center;color:#000;font-size:calc(100vw * ( 30 / 640));line-height:1.1;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.reviewer_profile_img{
+     width:calc(100vw * (120 / 640));height:calc(100vw * (120 / 640));display:block;border-radius:50%;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.reviewer_profile_img img{
+     width:100%;height:100%;display:block;border-radius:50%;
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.reviewer_profile_info{
+     width:calc(100vw * (320 / 640));height:calc(100vw * (120 / 640));padding-left:calc(100vw * (14 / 640));padding-top:calc(100vw * (40 / 640));
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h2{
+     font-size:calc(100vw * (22 / 640));line-height:1.23;color:#000;font-family:'MG060';letter-spacing:calc(100vw * (-0.22 / 640))
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h4{
+     font-size:calc(100vw * (18 / 640));line-height:1.5;color:#6e6e6e;font-family:'MG060';margin-top:calc(100vw * (6 / 640));letter-spacing:calc(100vw * (-0.36 / 640))
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.follow_btn{
+     position:absolute;right:0;top:calc(100vw * (28 / 640));width:calc(100vw * (65 / 640));height:calc(100vw * (65 / 640));background-color:#68c0b5;border-radius:50%;display:flex;font-size:calc(100vw * (17 / 640));line-height:1.18;color:white;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;z-index:34;font-family:'MG040';letter-spacing:calc(100vw * (-1.02 / 640))
+}
+div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.follow_btn.followed{
+     background-color:#c8c8c8;
+}
+
+/*search_list 제품류*/
+div#search_wrap section.recommend_item_area{
+     width:100%;height:auto;display:block;margin-top:calc(100vw * (54 / 640));
+}
+div#search_wrap section.recommend_item_area.first_element{
+     margin-top:calc(100vw * (48 / 640));
+}
+div#search_wrap section.recommend_item_area h2{
+     margin:0 auto;width:calc(100vw * (560 / 640));height:auto;display:block;font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list{
+     padding-top:calc(100vw * (26 / 640));width:100%;height:auto;display:block;padding-left:calc(100vw * (40 / 640));white-space:nowrap;
+     overflow-y:visible;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;position:relative;padding-bottom:calc(100vw * (12 / 640));
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list::-webkit-scrollbar{
+     display:none;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual{
+     width:calc(100vw * (475 / 640));height:calc(100vw * (356 / 640));border-radius:calc(100vw * ( 30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);background-color:#b5b5b5;position:relative;padding:calc(100vw * (29 / 640));display:inline-block;margin-right:calc(100vw * (31 / 640));
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.fade_dark{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:1;background-color:rgba(0,0,0,0.4);border-radius:calc(100vw * (30 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual img.item_background{
+     display:block;width:100%;height:100%;border-radius:calc(100vw * (30 / 640));position:absolute;left:0;top:0;z-index:0;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual img.item_img{
+     display:block;width:calc(100vw * (350 / 640));height:auto;position:absolute;left:0;right:0;bottom:0;top:0;margin:auto;z-index:0;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info{
+     display:block;height:auto;width:50%;position:relative;z-index:2
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info{
+     width:100%;height:auto;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info{
+     display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+     display:inline-flex;flex-flow:row wrap;align-items:center;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+     width:calc(100vw * (15 / 640));height:calc(100vw * (14 / 640));margin-right:calc(100vw * (3 / 640));display:block;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info span.score_value{
+     font-size:calc(100vw * (15 / 640));height:calc(100vw * (14 / 640));line-height:1;color:white;padding-left:calc(100vw * (4 / 640));font-family:'MG040';letter-spacing:calc(100vw * (-0.9 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info p.review_count{
+     margin-top:calc(100vw * (9 / 640));display:block;height:auto;font-size:calc(100vw * (18 / 640));color:white;line-height:1.22;font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information{
+     margin-top:calc(100vw * (37 / 640));width:100%;height:auto;color:white;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_title{
+     font-size:calc(100vw * (18 / 640));width:100%;height:auto;line-height:1.5;font-family:'MG060';letter-spacing:calc(100vw * (-0.36 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_desc{
+     font-size:calc(100vw * (20 / 640));margin-top:calc(100vw * ( 12 / 640));height:auto;display:block;width:100%;line-height:1.2;font-family:'MG070';letter-spacing:calc(100vw * (-1 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.sep_deco{
+     margin-top:calc(100vw * (13 / 640));margin-bottom:calc(100vw * (11 / 640));width:calc(100vw * (50 / 640));height:calc(100vw * (1 / 640));background-color:#afafaf
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_category{
+     font-size:calc(100vw * (18 / 640));line-height:calc(100vw * (21 / 640));font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.like_info{
+     position:absolute;right:calc(100vw * (20 / 640));top:calc(100vw * (30 / 640));display:block;height:auto;z-index:8
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.like_info img.like_icon{
+     display:block;width:calc(100vw * (23 / 640));height:calc(100vw * (19 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.like_info p.count{
+     margin-top:calc(100vw * (3 / 640));font-size:calc(100vw * (17 / 640));line-height:1.6;color:white;text-align:center;width:100%;font-family:'MG030';letter-spacing:calc(100vw * (-0.17 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data{
+     display:block;height:auto;position:absolute;right:calc(100vw * (21 / 640));bottom:calc(100vw * (21 / 640));width:auto;z-index:8;text-align:right;
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.due_date{
+     display:block;width:auto;height:auto;font-size:calc(100vw * (51 / 640));line-height:1.14;color:white;font-family:georgia;letter-spacing:calc(100vw * (-1.28 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info{
+     margin-top:calc(100vw * (8 / 640));width:auto;height:auto;letter-spacing:calc(100vw * (-1 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part{
+     font-size:calc(100vw * (20 / 640));line-height:1.2;color:white;font-family:'MG060'
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part em{
+     font-size:calc(100vw * (24 / 640));line-height:1;color:white;letter-spacing:calc(100vw * (-1.2 / 640))
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.divider{
+     font-size:calc(100vw * (20 / 640));line-height:1.2;color:white;padding:0 calc(100vw * (6 / 640));
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total{
+     font-size:calc(100vw * (20 / 640));line-height:1.2;color:white;font-family:'MG030'
+}
+div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total em{
+     font-size:calc(100vw * (24 / 640));line-height:1;letter-spacing:calc(100vw * (-1.2 / 640))
+}
+
+/*제품검색 페이지 검색결과 영역*/
+div#search_wrap section.search_result_area_forProduct{
+     margin-top:calc(100vw * (54 / 640));width:100%;height:auto;display:block;padding:0 calc(100vw * (40 / 640));
+}
+div#search_wrap section.search_result_area_forProduct h2{
+     width:100%;height:auto;font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual{
+     margin-top:calc(100vw * (30 / 640));width:100%;height:calc(100vw * (450 / 640));border-radius:calc(100vw * (30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);position:relative;background-color:#b5b5b5;padding:calc(100vw * (29 / 640));
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.fade_dark{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:1;border-radius:calc(100vw * (30 / 640));background-color:rgba(0,0,0,0.4);
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual img.item_img{
+     width:calc(100vw * (412 / 640));height:auto;display:block;position:absolute;z-index:0;left:0;top:0;bottom:0;right:0;margin:auto;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual img.item_background{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:0;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info{
+     color:white;width:50%;height:auto;display:block;position:relative;z-index:5
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info{
+     display:block;height:auto;width:100%;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info{
+     display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;width:100%;height:auto;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+     display:inline-flex;flex-flow:row wrap;width:auto;height:auto;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+     width:calc(100vw * (15 / 640));height:calc(100vw * (14 / 640));margin-right:calc(100vw * (3 / 640));
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+     display:block;width:100%;height:auto;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info span.score_value{
+     padding-left:calc(100vw * (4 / 640));font-size:calc(100vw * (15 / 640));line-height:1;height:calc(100vw * (14 / 640));font-family:'MG040';letter-spacing:calc(100vw * (-0.9 / 640))
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info p.review_count{
+     margin-top:calc(100vw * (10 / 640));font-size:calc(100vw * (18 / 640));line-height:1.22;font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information{
+     margin-top:calc(100vw * (36 / 640));width:100%;height:auto;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.product_title{
+     font-size:calc(100vw * (18 / 640));line-height:1;font-family:'MG060';letter-spacing:calc(100vw * (-0.36 / 640))
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.product_desc{
+     margin-top:calc(100vw * (12 / 640));font-size:calc(100vw * (20 / 640));line-height:1.2;color:white;font-family:'MG070';letter-spacing:calc(100vw * (-1 / 640))
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.sep_deco{
+     margin-top:calc(100vw * (13 / 640));margin-bottom:calc(100vw * (11 / 640));width:calc(100vw * (50 / 640));background-color:#afafaf;height:calc(100vw * (1 / 640));
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.product_category{
+     font-size:calc(100vw * (18 / 640));line-height:calc(100vw * (21 / 640));margin-top:calc(100vw * (12 / 640));font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.like_info{
+     position:absolute;right:calc(100vw * (20 / 640));top:calc(100vw * (30 / 640));width:auto;height:auto;display:block;z-index:9
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.like_info img.like_icon{
+     width:calc(100vw * (23 / 640));height:calc(100vw * (19 / 640));display:block;
+}
+div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.like_info p.count{
+     width:auto;font-size:calc(100vw * (17 / 640));line-height:1.6;color:white;margin-top:calc(100vw * (3 / 640));text-align:center;font-family:'MG030';letter-spacing:calc(100vw * (-0.17 / 640))
+}
+
+/*해시태그 검색 결과페이지 영역 > 해시태그 검색결과*/
+div#search_wrap section.search_result_hashtag{
+     margin:0 auto;margin-top:calc(100vw * (114 / 640));height:auto;display:block;width:calc(100vw * (560 / 640));border-top:calc(100vw * (1 / 640)) solid #000;display:none;position:relative;
+}
+div#search_wrap section.search_result_hashtag article.search_hashtag_item{
+     width:100%;height:auto;padding:calc(100vw * (22 / 640)) 0;border-bottom:calc(100vw * (1 / 640)) solid rgba(0,0,0,0.4);font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;font-family:'MG030'
+}
+div#search_wrap section.search_result_hashtag article.search_hashtag_item:last-of-type{
+     border-bottom:calc(100vw * (1 / 640)) solid rgba(0,0,0,1.0);
+}
+
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen{
+     width:100%;height:auto;display:block;position:absolute;left:0;top:-10%;background-color:white;z-index:7;padding-top:calc(100vw * (38 / 640));padding-bottom:calc(100vw * (110 / 640))
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen button.close_btn{
+     width:calc(100vw * (22 / 640));height:calc(100vw * (22 / 640));display:block;position:absolute;right:0;top:0;background-image:url('../img/search/cancle_icon.png');background-size:cover;background-position:center;background-color:transparent;
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data h2{
+     width:100%;height:auto;font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item{
+     width:100%;height:auto;padding:calc(100vw * (22 / 640)) 0;border-bottom:calc(100vw * ( 1 / 640)) solid rgba(0,0,0,0.4);position:relative;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item:last-child{
+     border-bottom:calc(100vw * ( 1 / 640)) solid rgba(0,0,0,1.0);
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item p{
+     width:60%;height:auto;font-size:calc(100vw * (20 / 640));line-height:1.35;font-family:'MG030';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item button.del_btn{
+     display:block;background-color:transparent;font-size:calc(100vw * (20 / 640));line-height:1.35;font-family:'MG030';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data{
+     margin-top:calc(100vw * (74 / 640));width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data h2{
+     width:100%;height:auto;font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data article.search_hashtag_item{
+     width:100%;height:auto;padding:calc(100vw * (22 / 640)) 0;border-bottom:calc(100vw * ( 1 / 640)) solid rgba(0,0,0,0.4);position:relative;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data article.search_hashtag_item:last-child{
+     border-bottom:calc(100vw * ( 1 / 640)) solid rgba(0,0,0,1.0);
+}
+div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data article.search_hashtag_item p{
+     width:60%;height:auto;font-size:calc(100vw * (20 / 640));line-height:1.35;font-family:'MG030';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+
+/*해시태그 검색 결과페이지 영역> 제품검색결과(검색결과x)*/
+div#search_wrap section.search_result_product{
+     width:100%;height:auto;margin-top:calc(100vw * (48 / 640));position:relative;display:block;
+}
+div#search_wrap section.search_result_product article.search_null{
+     width:100%;height:auto;min-height:calc(100vw * (880 / 640));display:block;text-align:center;padding-top:calc(100vw * (270 / 640))
+}
+div#search_wrap section.search_result_product article.search_null img{
+     width:calc(100vw * (167 / 640));height:calc(100vw * (167 / 640));background-color:#68c0b5;display:block;margin:0 auto;
+}
+div#search_wrap section.search_result_product article.search_null p.null_message{
+     width:100%;height
+     :auto;margin-top:calc(100vw * (40 / 640));font-size:calc(100vw * (20 / 640));color:#000;line-height:1.2;font-family:'MG030';letter-spacing:calc(100vw * (-1.2 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_product article.recommend_item_area h2{
+     margin:0 auto;width:calc(100vw * (560 / 640));height:auto;font-size:calc(100vw * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list{
+     padding-top:calc(100vw * (26 / 640));width:100%;height:auto;padding-left:calc(100vw * (40 / 640));white-space:nowrap;
+     overflow-y:visible;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;position:relative;padding-bottom:calc(100vw * (14 / 640));
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list::-webkit-scrollbar{
+     display:none;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual{
+     width:calc(100vw * (475 / 640));height:calc(100vw * (356 / 640));border-radius:calc(100vw * (30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);background-color:#b5b5b5;position:relative;padding:calc(100vw * (29 / 640));color:white;display:inline-block;margin-right:calc(100vw * (31 / 640));
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.fade_dark{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.4);z-index:1;border-radius:calc(100vw * (30 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual img.item_background{
+     display:block;width:100%;height:100%;position:absolute;left:0;top:0;z-index:0;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info{
+     width:50%;display:block;height:auto;position:relative;z-index:3;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info{
+     display:flex;width:100%;height:auto;flex-flow:row wrap;justify-content:flex-start;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+     display:inline-flex;width:auto;flex-flow:row wrap;justify-content:flex-start;height:calc(100vw * (14 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+     width:calc(100vw * (15 / 640));height:calc(100vw * (14 / 640));margin-right:calc(100vw * (3 / 640));display:block;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info span.score_value{
+     padding-left:calc(100vw * (4 / 640));font-size:calc(100vw * (15 / 640));line-height:1;font-family:'MG040';letter-spacing:calc(100vw * (-0.9 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info  p.review_count{
+     margin-top:calc(100vw * (10 / 640));display:block;height:auto;width:100%;font-size:calc(100vw * (18 / 640));line-height:1.22;font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information{
+     margin-top:calc(100vw * (36 / 640));width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_title{
+     width:100%;display:block;height:auto;font-size:calc(100vw * (18 / 640));line-height:1;font-family:'MG060';letter-spacing:calc(100vw * (-0.36 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_desc{
+     margin-top:calc(100vw * (12 / 640));font-size:calc(100vw * (20 / 640));line-height:1.2;font-family:'MG070';letter-spacing:calc(100vw * (-1 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.sep_deco{
+     margin-top:calc(100vw * (13 / 640));margin-bottom:calc(100vw * (10 / 640));width:calc(100vw * (50 / 640));height:calc(100vw * (1 / 640));display:block;background-color:#afafaf;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_category{
+     font-size:calc(100vw * (18 / 640));line-height:calc(100vw * (21 / 640));width:100%;height:auto;display:block;font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.like_info{
+     position:absolute;right:calc(100vw * (20 / 640));top:calc(100vw * (20 / 640));display:block;height:auto;width:auto;z-index:9;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.like_info img.like_icon{
+     display:block;width:calc(100vw * (23 / 640));height:calc(100vw * (19 / 640));
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.like_info p.count{
+     margin-top:calc(100vw * (3 / 640));width:100%;height:auto;text-align:center;font-size:calc(100vw * (17 / 640));line-height:1.6;font-family:'MG030';letter-spacing:calc(100vw * (-0.17 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data{
+     position:absolute;width:auto;height:auto;bottom:calc(100vw * (21 / 640));right:calc(100vw * (21 / 640));display:block;text-align:right;z-index:8
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.due_date{
+     width:auto;font-size:calc(100vw * (51 / 640));line-height:1.14;height:auto;font-family:georgia;letter-spacing:calc(100vw * (-1.28 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info{
+     margin-top:calc(100vw * (8 / 640));width:auto;height:auto;letter-spacing:calc(100vw * (-1 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part{
+     width:auto;font-size:calc(100vw * (20 / 640));line-height:calc(100vw * (29 / 640));height:auto;font-family:'MG060'
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part em{
+     width:auto;font-size:calc(100vw * (24 / 640));line-height:calc(100vw * (29 / 640));height:auto;letter-spacing:calc(100vw * (-1.2 / 640))
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.divider{
+     font-size:calc(100vw * (20 / 640));padding:0 calc(100vw * (4 / 640));line-height:calc(100vw * (29 / 640));height:auto;
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total{
+     width:auto;font-size:calc(100vw * (20 / 640));line-height:calc(100vw * (29 / 640));height:auto;font-family:'MG030'
+}
+div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total em{
+     width:auto;font-size:calc(100vw * (24 / 640));line-height:calc(100vw * (29 / 640));height:auto;letter-spacing:calc(100vw * (-1.2 / 640))
+}
+div#search_wrap section.search_result_product article.result_list_area{
+     margin-top:calc(100vw * (66 / 640));height:auto;display:block;height:auto;padding:0 calc(100vw * (40 / 640));
+}
+div#search_wrap section.search_result_product article.result_list_area h2{
+     width:100%;height:auto;font-size:calc(100vw * (20 / 640));line-height:1.35;padding-bottom:calc(100vw * (12 / 640));border-bottom:calc(100vw * (1 / 640)) solid #000;font-family:'MG070';letter-spacing:calc(100vw * (-0.4 / 640))
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual{
+     margin-top:calc(100vw * (30 / 640));width:100%;height:calc(100vw * (420 / 640));border-radius:calc(100vw * (30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);background-color:#b5b5b5;position:relative;padding:calc(100vw * (29 / 640));color:white;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.fade_dark{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:2;background-color:rgba(0,0,0,0.4);border-radius:calc(100vw * (30 / 640))
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual img.item_background{
+     width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:0;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual img.item_img{
+     width:calc(100vw * (412 / 640));height:calc(100vw * (309 / 640));display:block;position:absolute;left:0;right:0;bottom:0;top:0;margin:auto;z-index:0;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info{
+     width:50%;height:auto;display:block;position:relative;z-index:4
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info{
+     width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info{
+     display:flex;width:100%;height:auto;flex-flow:row wrap;justify-content:flex-start;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+     width:auto;display:inline-flex;height:auto;flex-flow:row wrap;justify-content:flex-start;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+     width:calc(100vw * (15 / 640));height:calc(100vw * (14 / 460));margin-right:calc(100vw * (3 / 640));display:block;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+     display:block;width:100%;height:auto;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info span.score_value{
+     font-size:calc(100vw * (15 / 640));line-height:1;color:white;width:auto;height:auto;padding-left:calc(100vw * (4 / 640));font-family:'MG040';letter-spacing:calc(100vw * (-0.9 / 640))
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info p.review_count{
+     margin-top:calc(100vw * (10 / 640));width:100%;height:auto;display:block;font-size:calc(100vw * (18 / 640));line-height:1.22;font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information{
+     margin-top:calc(100vw * (36/ 640));width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.product_title{
+     width:100%;height:auto;display:block;font-size:calc(100vw * (18 / 640));line-height:1;font-family:'MG060';letter-spacing:calc(100vw * (-0.36 / 640))
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.product_desc{
+     margin-top:calc(100vw * (12 / 640));width:100%;height:auto;display:block;font-size:calc(100vw *(20 / 640));line-height:1.2;font-family:'MG070';letter-spacing:calc(100vw * (-1 / 640))
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.sep_deco{
+     margin-top:calc(100vw * (13 / 640));margin-bottom:calc(100vw * (11 / 640));width:calc(100vw * (50 / 640));height:calc(100vw * (1 / 640));background-color:#efefef;display:block;
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.product_category{
+     font-size:calc(100vw * (18 / 640));line-height:calc(100vw * (21 / 640));display:block;width:100%;height:auto;font-family:'MG030';letter-spacing:calc(100vw * (-1.08 / 640))
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.like_info{
+     right:calc(100vw * (20 / 640));top:calc(100vw * (20 / 640));display:block;width:auto;height:auto;position:absolute;z-index:9
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.like_info img{
+     display:block;width:calc(100vw * (23 / 640));height:calc(100vw * (19 / 640));
+}
+div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.like_info p.count{
+     margin-top:calc(100vw * (3 / 640));width:100%;height:auto;text-align:center;font-size:calc(100vw * (17 / 640));line-height:1.6;font-family:'MG030';letter-spacing:calc(100vw * (-0.17 / 640))
+}
+
+/*해시태그 검색결과 페이징 영역>사용자 검색 결과 연관사용자*/
+div#search_wrap section.search_result_users{
+     padding:calc(100vw * (98 / 640)) 0;width:100%;height:auto;display:block;
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item{
+     width:calc(100vw * (560 / 640));height:auto;display:block;padding-bottom:calc(100vw * (27 / 640));margin:0 auto;margin-bottom:calc(100vw * (21 / 640));border-bottom:1px solid #a8a8a8;
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container{
+     width:100%;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;position:relative;
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.clown_rank{
+     width:calc(100vw * (95 / 640));height:calc(100vw * (120 / 640));display:block;text-align:center;padding-top:calc(100vw * (26 / 640));
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.clown_rank img{
+     width:calc(100vw * (39 / 640));height:calc(100vw * (24 / 640));display:block;margin:0 auto;background-color:#000;
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.clown_rank p.rank_value{
+     width:100%;display:block;margin-top:calc(100vw * (14 / 640));text-align:center;color:#000;font-size:calc(100vw * ( 30 / 640));line-height:1.1;
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.reviewer_profile_img{
+     width:calc(100vw * (120 / 640));height:calc(100vw * (120 / 640));display:block;border-radius:50%;
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.reviewer_profile_img img{
+     width:100%;height:100%;display:block;border-radius:50%;
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.reviewer_profile_info{
+     width:calc(100vw * (320 / 640));height:calc(100vw * (120 / 640));padding-left:calc(100vw * (14 / 640));padding-top:calc(100vw * (40 / 640));
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h2{
+     font-size:calc(100vw * (22 / 640));line-height:1.23;color:#000;font-family:'MG060';letter-spacing:calc(100vw * (-0.22 / 640))
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h4{
+     font-size:calc(100vw * (18 / 640));line-height:1.5;color:#6e6e6e;font-family:'MG060';margin-top:calc(100vw * (6 / 640));letter-spacing:calc(100vw * (-0.36 / 640))
+}
+div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.follow_btn{
+     position:absolute;right:0;top:calc(100vw * (28 / 640));width:calc(100vw * (65 / 640));height:calc(100vw * (65 / 640));background-color:#68c0b5;border-radius:50%;display:flex;font-size:calc(100vw * (17 / 640));line-height:1.18;color:white;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;font-family:'MG040';letter-spacing:calc(100vw * (-1.02 / 640))
+}
+
+
+@media all and (min-width:820px){
+     div#search_wrap{
+          max-width:800px;margin:0 auto;display:block;width:100%;height:auto;padding-bottom:calc(800px * (220 / 640));
+     }
+     div#search_wrap div.search_form_wrap{
+          display:block;height:auto;width:100%;position:relative;
+     }
+     div#search_wrap div.search_form_wrap form.search_form{
+          display:block;width:100%;padding:0;height:auto;position:relative;padding-top:calc(800px * (54 / 640));
+     }
+     div#search_wrap div.search_form_wrap form.search_form input.search_query{
+          font-size:calc(800px * (20 / 640));color:#000;line-height:1.2;padding-bottom:calc(800px * (20 / 640));border-bottom:calc(800px * (3 / 640)) solid #000;width:100%;height:auto;letter-spacing:calc(800px * (-0.2 / 640))
+     }
+     div#search_wrap div.search_form_wrap form.search_form input.cancle_btn{
+          width:calc(800px * (23 / 640));height:calc(800px * (23 / 640));position:absolute;top:calc(800px * (54 / 640));display:block;right:0;background-image:url('../img/search/cancle_icon.png');background-size:cover;background-position:center;background-color:transparent;
+     }
+     /*search_function_window css*/
+     div#search_wrap div.search_form_wrap section.search_function_window{
+          width:100%;height:auto;position:absolute;left:0;top:100%;background-color:rgba(255,255,255,1.0);padding:calc(800px * (74 / 640)) calc(800px * (10 / 640));padding-bottom:calc(800px * (102 / 640));overflow:hidden;display:none;z-index:80
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window button.close_btn{
+          width:calc(800px * (22 / 640));height:calc(800px * (22 / 640));display:block;right:0;top:calc(800px * (20 / 640));position:absolute;background-image:url('../img/search/cancle_icon.png');background-size:cover;background-position:center;background-color:transparent;
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords h2{
+          width:100%;height:auto;font-size:calc(800px * (20 / 640));color:#000;line-height:1.35;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword{
+          padding-top:calc(800px * (18 / 640));padding-bottom:calc(800px * (21 / 640));width:100%;height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;border-bottom:calc(800px * (1 / 640)) solid rgba(0,0,0,0.4);letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword:last-child{
+          border-bottom:calc(800px * (1 / 640)) solid rgba(0,0,0,1.0);
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword span.keyword{
+          font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;display:block;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.recently_search_keywords p.search_keyword button.del_btn{
+          display:block;font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;background-color:transparent;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords{
+          margin-top:calc(800px * (74 / 640));
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords h2{
+          width:100%;height:auto;font-size:calc(800px * (20 / 640));color:#000;line-height:1.35;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords p.search_keyword{
+          padding-top:calc(800px * (18 / 640));padding-bottom:calc(800px * (21 / 640));width:100%;height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;border-bottom:calc(800px * (1 / 640)) solid rgba(0,0,0,0.4);letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords p.search_keyword:last-child{
+          border-bottom:calc(800px * (1 / 640)) solid rgba(0,0,0,1.0);
+     }
+     div#search_wrap div.search_form_wrap section.search_function_window article.hot_search_keywords p.search_keyword span.keyword{
+          font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;display:block;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+
+     /*검색종류별 페이지 이동*/
+     div#search_wrap ul.search_option{
+          margin-top:calc(800px * (80 / 640));display:block;width:100%;padding:0;height:auto;display:flex;flex-flow:row wrap;justify-content:flex-start;
+     }
+     div#search_wrap ul.search_option:after{
+          display:block;clear:both;content:'';
+     }
+     div#search_wrap ul.search_option li{
+          display:block;width:calc(800px * (128 / 640));height:calc(800px * (50 / 640));border-radius:calc(800px * (30 / 640));margin-right:calc(800px * ( 8 / 640));border:1px solid rgba(0,0,0,0.5);position:relative;text-align:center;line-height:calc(800px * (50 / 640));font-size:calc(800px * (18 / 640));letter-spacing:calc(800px * (-0.9 / 640));
+     }
+     div#search_wrap ul.search_option li:last-child{
+          margin-right:0;
+     }
+     div#search_wrap ul.search_option li.active{
+          background-color:#68c0b5;box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);color:white;border:1px solid #68c0b5;letter-spacing:calc(800px * (-0.18 / 640))
+     }
+     div#search_wrap ul.search_option li a{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;
+     }
+     div#search_wrap section.search_result_brand_list{
+          margin-top:calc(800px * (48 / 640));width:100%;padding:0;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_brand_list h2.search_option_txt{
+          font-size:calc(800px * (20 / 640));display:block;height:auto;line-height:1.35;color:#000;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_brand_list dl.search_items{
+          width:100%;height:auto;display:block;border-bottom:calc(800px * (1 / 640)) solid rgba(0,0,0,0.5);padding:calc(800px * (46 / 640)) 0;display:flex;flex-flow:row wrap;justify-content:flex-start;position:relative;
+     }
+     div#search_wrap section.search_result_brand_list dl.search_items dt.brand_logo{
+          width:calc(800px * (145 / 640));height:calc(800px * (75 / 640));border-radius:calc(800px * (30 / 640));border:1px solid #000;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;
+     }
+     div#search_wrap section.search_result_brand_list dl.search_items dt.brand_logo img{
+          display:block;width:60%;height:auto;min-height:30%
+     }
+     div#search_wrap section.search_result_brand_list dl.search_items dd.brand_info{
+          padding-top:calc(800px * (10 / 640));display:block;width:calc(800px * (260 / 640));height:auto;padding-left:calc(800px * (16 / 640));
+     }
+     div#search_wrap section.search_result_brand_list dl.search_items dd.brand_info h2{
+          font-size:calc(800px * (22 / 640));line-height:calc(800px * (27 / 640));color:#000;display:block;width:100%;height:auto;letter-spacing:calc(800px * (-0.22 / 640))
+     }
+     div#search_wrap section.search_result_brand_list dl.search_items dd.brand_info p{
+          padding-top:calc(800px * (6 / 640));display:block;width:100%;height:auto;font-size:calc(800px * (18 / 640));color:#6e6e6e;line-height:calc(800px * (21 / 640));letter-spacing:calc(800px * (-0.36 / 640))
+     }
+     div#search_wrap section.search_result_brand_list dl.search_items dd.follow_btn{
+          top:calc(800px * (51 / 640));right:0;position:absolute;width:calc(800px * (65 / 640));height:calc(800px * (65 / 640));background-color:#68c0b5;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;color:white; font-size:calc(800px * (17 / 640));line-height:1.18;border-radius:50%;letter-spacing:calc(800px * (-1.02 / 640))
+     }
+
+     /*search_wrap review_rank_list > review_list_wrap_nested_version*/
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version{
+          width:100%;display:block;background-color:#68c0b5;height:auto;transform:translateY(calc(-800px * (56 / 640)));/*56px만큼의 비율크기로 원래 위치에서 이동한다 relative와 효과 같음*/border-top-left-radius:calc(800px * (24 / 640));border-top-right-radius:calc(800px * (24 / 640));box-shadow:0 0 15px 0 rgba(0,0,0,0.6);padding-bottom:calc(800px * (60 / 640));box-shadow:none;transform:none;border-radius:0;background-color:white;padding-bottom:0;display:none;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap.active section.review_list_wrap_nested_version{
+          display:block;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version h2.tit{
+          width:100%;height:auto;display:block;text-align:center;padding-top:calc(800px * (56 / 640));padding-bottom:calc(800px * (48 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version h2.tit img{
+          display:inline-block;width:calc(800px * (173 / 640));height:calc(800px * (45 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list{
+          background-color:white;border-radius:calc(800px * (24 / 640));width:100%;height:auto;padding-top:calc(800px * (27 / 640));padding-bottom:calc(800px * (48 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list_tab_version{
+          border-radius:0;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual{
+          margin:0 auto;width:100%;padding-bottom:calc(800px * (42 / 640));height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #afafaf;margin-bottom:calc(800px * (43 / 640));position:relative;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual > a{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information{
+          display:block;width:calc(800px * (320 / 640));height:auto;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head{
+          height:auto;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img{
+          width:calc(800px * (75 / 640));height:calc(800px * (75 / 640));display:block;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img img{
+          width:100%;height:100%;border-radius:50%
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info{
+          width:calc(800px * (180 / 640));height:auto;display:block;margin-left:calc(800px * (11 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h2.user_name{
+          padding-top:calc(800px * (4 / 640));font-size:calc(800px * (18 / 640));line-height:1.5;width:100%;display:block;letter-spacing:calc(800px * (-0.18 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h4.review_date{
+          padding-top:calc(800px * (9 / 640));font-size:calc(800px * (16 / 640));line-height:1.6;color:#6e6e6e;letter-spacing:calc(800px * (-0.16 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score{
+          padding-top:calc(800px * (7 / 640));display:flex;align-items:flex-end;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score::after{
+          display:block;clear:both;content:''
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score{
+          display:block;height:calc(800px * (21 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score::after{
+          display:block;content:'';clear:both;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li{
+          width:calc(800px * (22 / 640));height:calc(800px * (20 / 640));display:block;float:left;margin-right:calc(800px * (6 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li > img{
+          display:block;width:100%;height:auto;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score span.value{
+          display:block;font-size:calc(800px * (18 / 640));color:#000;line-height:1.22;letter-spacing:calc(800px * (-1.08 / 640));transform:translateY(10%)
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body{
+          margin-top:calc(800px * (19 / 640));width:100%;height:auto;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body h2.review_title{
+          width:100%;display:block;font-size:calc(800px * (23 / 640));color:#000;line-height:1.17;height:calc(800px * (30 / 640));overflow:hidden;letter-spacing:calc(800px * (-1.38 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body p.review_product_item{
+          margin-top:calc(800px * (11 / 640));color:#5ec4b6;line-height:1.6;font-size:calc(800px * (17 / 640));letter-spacing:calc(800px * (-1.02 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_left_information dl.review_body h4.extra{
+          margin-top:calc(800px * (7 / 640));color:#6e6e6e;font-size:calc(800px * (15 / 640));line-height:1.8;letter-spacing:calc(800px * (-0.15 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information{
+          width:calc(800px * (225 / 640));height:auto;position:relative;
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information img.size_ver1{
+          width:100%;height:calc(800px * (177 / 640));border-radius:calc(800px * (20 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_review_list_wrap_nested_versionwrap div.review_list article.review_indiviual .review_right_information img.size_ver2{
+          width:100%;height:calc(800px * (200 / 640));border-radius:calc(800px * (20 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information dl.like_info{
+          position:absolute;right:calc(800px * (18 / 640));top:calc(800px * (18 / 640));display:block;height:calc(800px * (19 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information dl.like_info span.count{
+          display:inline-block;font-size:calc(800px * (17 / 640));line-height:1.6;color:#5ec4b6;transform:translateY(-15%);letter-spacing:calc(800px * (-0.17 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list div.reviewer_rank_item_wrap section.review_list_wrap_nested_version div.review_list article.review_indiviual .review_right_information dl.like_info img.like_icon{
+          display:inline-block;width:calc(800px * (23 / 640));height:calc(800px * (19 / 640));margin-left:calc(800px * (6 / 640));
+     }
+
+     div#search_wrap section.review_list_wrap{
+          width:100%;display:block;background-color:#68c0b5;height:auto;transform:translateY(calc(-800px * (56 / 640)));/*56px만큼의 비율크기로 원래 위치에서 이동한다 relative와 효과 같음*/border-top-left-radius:calc(800px * (24 / 640));border-top-right-radius:calc(800px * (24 / 640));box-shadow:0 0 15px 0 rgba(0,0,0,0.6);padding-bottom:calc(800px * (60 / 640));position:relative;z-index:3
+     }
+     div#search_wrap section.review_list_wrap_tab_version{
+          box-shadow:none;transform:none;border-radius:0;background-color:white;padding-bottom:0
+     }
+     div#search_wrap section.review_list_wrap h2.tit{
+          width:100%;height:auto;display:block;text-align:center;padding-top:calc(800px * (56 / 640));padding-bottom:calc(800px * (48 / 640));
+     }
+     div#search_wrap section.review_list_wrap h2.tit img{
+          display:inline-block;width:calc(800px * (173 / 640));height:calc(800px * (45 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list{
+          background-color:white;border-radius:calc(800px * (24 / 640));width:100%;height:auto;padding-top:calc(800px * (27 / 640));padding-bottom:calc(800px * (80 / 640))
+     }
+     div#search_wrap section.review_list_wrap div.review_list_tab_version{
+          border-radius:0;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual{
+          margin:0 auto;width:calc(800px * (560 / 640));padding-bottom:calc(800px * (42 / 640));height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #c7c7c7;margin-bottom:calc(800px * (43 / 640));position:relative;
+     }
+     div#search_wrap section.review_list_wrap div.review_list_tab_version article.review_indiviual{
+          width:100%;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual > a{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information{
+          display:block;width:calc(800px * (320 / 640));height:auto;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head{
+          height:auto;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img{
+          width:calc(800px * (75 / 640));height:calc(800px * (75 / 640));display:block;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dt.user_img img{
+          width:100%;height:100%;border-radius:50%
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info{
+          width:calc(800px * (180 / 640));height:auto;display:block;margin-left:calc(800px * (11 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h2.user_name{
+          padding-top:calc(800px * (4 / 640));font-size:calc(800px * (18 / 640));line-height:1;width:100%;display:block;letter-spacing:calc(800px * (-0.18 / 640));color:#6e6e6e
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info h4.review_date{
+          padding-top:calc(800px * (9 / 640));font-size:calc(800px * (16 / 640));line-height:1;color:#6e6e6e;letter-spacing:calc(800px * (-0.16 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score{
+          padding-top:calc(800px * (7 / 640));display:flex;align-items:flex-end;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score::after{
+          display:block;clear:both;content:''
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score{
+          display:block;height:calc(800px * (21 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score::after{
+          display:block;content:'';clear:both;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li{
+          width:calc(800px * (22 / 640));height:calc(800px * (20 / 640));display:block;float:left;margin-right:calc(800px * (6 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score ul.score li img{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_head dd.user_info div.review_score span.value{
+          display:block;font-size:calc(800px * (18 / 640));color:#000;line-height:calc(800px * (21 / 640));letter-spacing:calc(800px * (-1.08 / 640));margin-left:calc(800px * (10 / 640));transform:translateY(10%)
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body{
+          margin-top:calc(800px * (19 / 640));width:100%;height:auto;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body h2.review_title{
+          width:100%;display:block;font-size:calc(800px * (23 / 640));color:#000;line-height:calc(800px * (28 / 640));overflow:hidden;white-space:nowrap;text-overflow:ellipsis;letter-spacing:calc(800px * (-1.38 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body p.review_product_item{
+          margin-top:calc(800px * (11 / 640));color:#5ec4b6;line-height:calc(800px * (20 / 640));font-size:calc(800px * (17 / 640));letter-spacing:calc(800px * (-1.02 / 640))
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_left_information dl.review_body h4.extra{
+          margin-top:calc(800px * (7 / 640));color:#6e6e6e;font-size:calc(800px * (15 / 640));line-height:1;letter-spacing:calc(800px * (-0.15 / 640))
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information{
+          width:calc(800px * (225 / 640));height:auto;position:relative;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information img.size_ver1{
+          width:100%;height:calc(800px * (177 / 640));border-radius:calc(800px * (20 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information img.size_ver2{
+          width:100%;height:calc(800px * (200 / 640));border-radius:calc(800px * (20 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information dl.like_info{
+          position:absolute;right:calc(800px * (18 / 640));top:calc(800px * (18 / 640));display:flex;height:calc(800px * (19 / 640));flex-flow:row wrap;justify-content:flex-start;align-items:flex-end;
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information dl.like_info span.count{
+          display:inline-block;font-size:calc(800px * (17 / 640));line-height:1.6;color:#5ec4b6;letter-spacing:calc(800px * (-0.17 / 640));
+     }
+     div#search_wrap section.review_list_wrap div.review_list article.review_indiviual .review_right_information dl.like_info img.like_icon{
+          display:inline-block;width:calc(800px * (23 / 640));height:calc(800px * (19 / 640));margin-left:calc(800px * (6 / 640));
+     }
+
+     /*리뷰어 리스트*/
+     div#search_wrap section.reviewer_rank_list{
+          margin-top:calc(800px * (100 / 640));width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item{
+          width:100%;height:auto;display:block;padding-bottom:calc(800px * (27 / 640));margin:0 auto;margin-bottom:calc(800px * (21 / 640));border-bottom:1px solid #a8a8a8;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item:last-child{
+          border-bottom:calc(800px * (3 / 640)) solid #000;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container{
+          width:100%;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;position:relative;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.clown_rank{
+          width:calc(800px * (95 / 640));height:calc(800px * (120 / 640));display:block;text-align:center;padding-top:calc(800px * (26 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.clown_rank img{
+          width:calc(800px * (39 / 640));height:calc(800px * (24 / 640));display:block;margin:0 auto;background-color:#000;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.clown_rank p.rank_value{
+          width:100%;display:block;margin-top:calc(800px * (14 / 640));text-align:center;color:#000;font-size:calc(800px * ( 30 / 640));line-height:1.1;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.reviewer_profile_img{
+          width:calc(800px * (120 / 640));height:calc(800px * (120 / 640));display:block;border-radius:50%;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dt.reviewer_profile_img img{
+          width:100%;height:100%;display:block;border-radius:50%;
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.reviewer_profile_info{
+          width:calc(800px * (320 / 640));height:calc(800px * (120 / 640));padding-left:calc(800px * (14 / 640));padding-top:calc(800px * (40 / 640));
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h2{
+          font-size:calc(800px * (22 / 640));line-height:1.23;color:#000;letter-spacing:calc(800px * (-0.22 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h4{
+          font-size:calc(800px * (18 / 640));line-height:1.5;color:#6e6e6e;margin-top:calc(800px * (6 / 640));letter-spacing:calc(800px * (-0.36 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.follow_btn{
+          position:absolute;right:0;top:calc(800px * (28 / 640));width:calc(800px * (65 / 640));height:calc(800px * (65 / 640));background-color:#68c0b5;border-radius:50%;display:flex;font-size:calc(800px * (17 / 640));line-height:1.18;color:white;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;z-index:34;letter-spacing:calc(800px * (-1.02 / 640))
+     }
+     div#search_wrap section.reviewer_rank_list article.reviewer_rank_item dl.info_container dd.follow_btn.followed{
+          background-color:#c8c8c8;
+     }
+
+     /*search_list 제품류*/
+     div#search_wrap section.recommend_item_area{
+          width:100%;height:auto;display:block;margin-top:calc(800px * (54 / 640));
+     }
+     div#search_wrap section.recommend_item_area.first_element{
+          margin-top:calc(800px * (48 / 640))
+     }
+     div#search_wrap section.recommend_item_area h2{
+          margin:0 auto;width:100%;height:auto;display:block;font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list{
+          padding-top:calc(800px * (26 / 640));width:100%;height:auto;display:block;padding-left:calc(800px * (10 / 640));white-space:nowrap;
+          overflow-y:visible;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;position:relative;padding-bottom:calc(800px * (12 / 640));
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list::-webkit-scrollbar{
+          display:none;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual{
+          width:calc(800px * (475 / 640));height:calc(800px * (356 / 640));border-radius:calc(800px * ( 30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);background-color:#b5b5b5;position:relative;padding:calc(800px * (29 / 640));display:inline-block;margin-right:calc(800px * (31 / 640));
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.fade_dark{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:1;background-color:rgba(0,0,0,0.4);border-radius:calc(800px * (30 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual img.item_background{
+          display:block;width:100%;height:100%;border-radius:calc(800px * (30 / 640));position:absolute;left:0;top:0;z-index:0;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual img.item_img{
+          display:block;width:calc(800px * (350 / 640));height:auto;position:absolute;left:0;right:0;bottom:0;top:0;margin:auto;z-index:0;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info{
+          display:block;height:auto;width:50%;position:relative;z-index:2
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info{
+          width:100%;height:auto;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info{
+          display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+          display:inline-flex;flex-flow:row wrap;align-items:center;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+          width:calc(800px * (15 / 640));height:calc(800px * (14 / 640));margin-right:calc(800px * (3 / 640));display:block;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info span.score_value{
+          font-size:calc(800px * (15 / 640));height:calc(800px * (14 / 640));line-height:1;color:white;padding-left:calc(800px * (4 / 640));letter-spacing:calc(800px * (-0.9 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info p.review_count{
+          margin-top:calc(800px * (9 / 640));display:block;height:auto;font-size:calc(800px * (18 / 640));color:white;line-height:1.22;letter-spacing:calc(800px * (-1.08 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information{
+          margin-top:calc(800px * (37 / 640));width:100%;height:auto;color:white;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_title{
+          font-size:calc(800px * (18 / 640));width:100%;height:auto;line-height:1;letter-spacing:calc(800px * (-0.36 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_desc{
+          margin-top:calc(800px * ( 12 / 640));font-size:calc(800px * (20 / 640));height:auto;display:block;width:100%;line-height:calc(800px * (24 / 640));letter-spacing:calc(800px * (-1 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.sep_deco{
+          margin-top:calc(800px * (13 / 640));margin-bottom:calc(800px * (11 / 640));width:calc(800px * (50 / 640));height:calc(800px * (1 / 640));background-color:#afafaf
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_category{
+          font-size:calc(800px * (18 / 640));line-height:calc(800px * (21 / 640));letter-spacing:calc(800px * (-1.08 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.like_info{
+          position:absolute;right:calc(800px * (20 / 640));top:calc(800px * (30 / 640));display:block;height:auto;z-index:8
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.like_info img.like_icon{
+          display:block;width:calc(800px * (23 / 640));height:calc(800px * (19 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.like_info p.count{
+          margin-top:calc(800px * (3 / 640));font-size:calc(800px * (17 / 640));line-height:1.6;color:white;text-align:center;width:100%;letter-spacing:calc(800px * (-0.17 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data{
+          display:block;height:auto;position:absolute;right:calc(800px * (21 / 640));bottom:calc(800px * (21 / 640));width:auto;z-index:8;text-align:right;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.due_date{
+          display:block;width:auto;height:auto;font-size:calc(800px * (51 / 640));line-height:1.14;color:white;letter-spacing:calc(800px * (-1.28 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info{
+          margin-top:calc(800px * (8 / 640));width:auto;height:auto;letter-spacing:calc(800px * (-1 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part{
+          font-size:calc(800px * (20 / 640));line-height:1.2;color:white;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part em{
+          font-size:calc(800px * (24 / 640));line-height:1;color:white;letter-spacing:calc(800px * (-1.2 / 640))
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.divider{
+          font-size:calc(800px * (20 / 640));line-height:1.2;color:white;padding:0 calc(800px * (6 / 640));
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total{
+          font-size:calc(800px * (20 / 640));line-height:1.2;color:white;
+     }
+     div#search_wrap section.recommend_item_area article.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total em{
+          font-size:calc(800px * (24 / 640));line-height:1;letter-spacing:calc(800px * (-1.2 / 640))
+     }
+
+     /*제품검색 페이지 검색결과 영역*/
+     div#search_wrap section.search_result_area_forProduct{
+          margin-top:calc(800px * (54 / 640));width:100%;height:auto;display:block;padding:0;
+     }
+     div#search_wrap section.search_result_area_forProduct h2{
+          width:100%;height:auto;font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual{
+          margin-top:calc(800px * (30 / 640));width:100%;height:calc(800px * (514 / 640));border-radius:calc(800px * (30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);position:relative;background-color:#b5b5b5;padding:calc(800px * (29 / 640));
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.fade_dark{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:1;border-radius:calc(800px * (30 / 640));background-color:rgba(0,0,0,0.4);
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual img.item_img{
+          width:calc(800px * (474 / 640));height:auto;display:block;position:absolute;z-index:0;left:0;top:0;bottom:0;right:0;margin:auto;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual img.item_background{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:0;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info{
+          color:white;width:50%;height:auto;display:block;position:relative;z-index:5
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info{
+          display:block;height:auto;width:100%;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info{
+          display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;width:100%;height:auto;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+          display:inline-flex;flex-flow:row wrap;width:auto;height:auto;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+          width:calc(800px * (15 / 640));height:calc(800px * (14 / 640));margin-right:calc(800px * (3 / 640));
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+          display:block;width:100%;height:auto;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info div.score_info span.score_value{
+          padding-left:calc(800px * (4 / 640));font-size:calc(800px * (15 / 640));line-height:1;height:calc(800px * (14 / 640));letter-spacing:calc(800px * (-0.9 / 640))
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dt.extra_info p.review_count{
+          margin-top:calc(800px * (10 / 640));font-size:calc(800px * (18 / 640));line-height:1.22;letter-spacing:calc(800px * (-1.08 / 640))
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information{
+          margin-top:calc(800px * (36 / 640));width:100%;height:auto;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.product_title{
+          font-size:calc(800px * (18 / 640));line-height:1;letter-spacing:calc(800px * (-0.36 / 640))
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.product_desc{
+          margin-top:calc(800px * (12 / 640));font-size:calc(800px * (20 / 640));line-height:calc(800px * (24 / 640));color:white;letter-spacing:calc(800px * (-1 / 640))
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.sep_deco{
+          margin-top:calc(800px * (13 / 640));margin-bottom:calc(800px * (11 / 640));width:calc(800px * (50 / 640));background-color:#afafaf;height:calc(100vw * (1 / 640));
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual dl.product_info dd.information p.product_category{
+          font-size:calc(800px * (18 / 640));line-height:calc(800px * (21 / 640));margin-top:calc(800px * (12 / 640));letter-spacing:calc(800px * (-1.08 / 640))
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.like_info{
+          position:absolute;right:calc(800px * (20 / 640));top:calc(800px * (30 / 640));width:auto;height:auto;display:block;z-index:9
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.like_info img.like_icon{
+          width:calc(800px * (23 / 640));height:calc(800px * (19 / 640));display:block;
+     }
+     div#search_wrap section.search_result_area_forProduct article.search_item_indiviual div.like_info p.count{
+          width:auto;font-size:calc(800px * (17 / 640));line-height:1.6;color:white;margin-top:calc(800px * (3 / 640));text-align:center;letter-spacing:calc(800px * (-0.17 / 640))
+     }
+
+     /*해시태그 검색 결과페이지 영역 > 해시태그 검색결과*/
+     div#search_wrap section.search_result_hashtag{
+          margin:0 auto;margin-top:calc(800px * (114 / 640));height:auto;display:block;width:100%;border-top:calc(800px * (1 / 640)) solid #000;display:none;position:relative;
+     }
+     div#search_wrap section.search_result_hashtag article.search_hashtag_item{
+          width:100%;height:auto;padding:calc(800px * (22 / 640)) 0;border-bottom:calc(800px * (1 / 640)) solid rgba(0,0,0,0.4);font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_hashtag article.search_hashtag_item:last-of-type{
+          border-bottom:calc(800px * (1 / 640)) solid rgba(0,0,0,1.0);
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen{
+          width:100%;height:auto;display:block;position:absolute;left:0;top:-10%;background-color:white;z-index:7;padding-top:calc(800px * (38 / 640));padding-bottom:calc(800px * (110 / 640))
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen button.close_btn{
+          width:calc(800px * (22 / 640));height:calc(800px * (22 / 640));display:block;position:absolute;right:0;top:0;background-image:url('../img/search/cancle_icon.png');background-size:cover;background-position:center;background-color:transparent;
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data h2{
+          width:100%;height:auto;font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item{
+          width:100%;height:auto;padding:calc(800px * (22 / 640)) 0;border-bottom:calc(800px * ( 1 / 640)) solid rgba(0,0,0,0.4);position:relative;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item:last-child{
+          border-bottom:calc(800px * ( 1 / 640)) solid rgba(0,0,0,1.0);
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item p{
+          width:60%;height:auto;font-size:calc(800px * (20 / 640));line-height:1.35;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.recently_search_data article.search_hashtag_item button.del_btn{
+          display:block;background-color:transparent;font-size:calc(800px * (20 / 640));line-height:1.35;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data{
+          margin-top:calc(800px * (74 / 640));width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data h2{
+          width:100%;height:auto;font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data article.search_hashtag_item{
+          width:100%;height:auto;padding:calc(800px * (22 / 640)) 0;border-bottom:calc(800px * ( 1 / 640)) solid rgba(0,0,0,0.4);position:relative;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data article.search_hashtag_item:last-child{
+          border-bottom:calc(800px * ( 1 / 640)) solid rgba(0,0,0,1.0);
+     }
+     div#search_wrap section.search_result_hashtag div.hashtag_search_history_screen div.hot_search_data article.search_hashtag_item p{
+          width:60%;height:auto;font-size:calc(800px * (20 / 640));line-height:1.35;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+
+     /*해시태그 검색 결과페이지 영역> 제품검색결과(검색결과x)*/
+     div#search_wrap section.search_result_product{
+          width:100%;height:auto;margin-top:calc(800px * (48 / 640));position:relative;display:block;
+     }
+     div#search_wrap section.search_result_product article.search_null{
+          width:100%;height:auto;min-height:calc(800px * (880 / 640));display:block;text-align:center;padding-top:calc(800px * (270 / 640))
+     }
+     div#search_wrap section.search_result_product article.search_null img{
+          width:calc(800px * (167 / 640));height:calc(800px * (167 / 640));background-color:#68c0b5;display:block;margin:0 auto;
+     }
+     div#search_wrap section.search_result_product article.search_null p.null_message{
+          width:100%;height
+          :auto;margin-top:calc(800px * (40 / 640));font-size:calc(800px * (20 / 640));color:#000;line-height:1.2;letter-spacing:calc(800px * (-1.2 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area h2{
+          margin:0 auto;width:100%;height:auto;font-size:calc(800px * (20 / 640));line-height:1.35;color:#000;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list{
+          padding-top:calc(800px * (26 / 640));width:100%;height:auto;padding-left:calc(800px * (10 / 640));white-space:nowrap;
+          overflow-y:visible;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:none;position:relative;padding-bottom:calc(800px * (14 / 640));
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list::-webkit-scrollbar{
+          display:none;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual{
+          width:calc(800px * (475 / 640));height:calc(800px * (356 / 640));border-radius:calc(800px * (30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);background-color:#b5b5b5;position:relative;padding:calc(800px * (29 / 640));color:white;display:inline-block;margin-right:calc(800px * (31 / 640));
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.fade_dark{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.4);z-index:1;border-radius:calc(800px * (30 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual img.item_background{
+          display:block;width:100%;height:100%;position:absolute;left:0;top:0;z-index:0;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info{
+          width:50%;display:block;height:auto;position:relative;z-index:3;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info{
+          display:flex;width:100%;height:auto;flex-flow:row wrap;justify-content:flex-start;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+          display:inline-flex;width:auto;flex-flow:row wrap;justify-content:flex-start;height:calc(800px * (14 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+          width:calc(800px * (15 / 640));height:calc(800px * (14 / 640));margin-right:calc(800px * (3 / 640));display:block;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info div.score_info span.score_value{
+          padding-left:calc(800px * (4 / 640));font-size:calc(800px * (15 / 640));line-height:1;letter-spacing:calc(800px * (-0.9 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dt.extra_info  p.review_count{
+          margin-top:calc(800px * (10 / 640));display:block;height:auto;width:100%;font-size:calc(800px * (18 / 640));line-height:1.22;letter-spacing:calc(800px * (-1.08 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information{
+          margin-top:calc(800px * (36 / 640));width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_title{
+          width:100%;display:block;height:auto;font-size:calc(800px * (18 / 640));line-height:1;letter-spacing:calc(800px * (-0.36 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_desc{
+          margin-top:calc(800px * (12 / 640));font-size:calc(800px * (20 / 640));line-height:1.2;letter-spacing:calc(800px * (-1 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.sep_deco{
+          margin-top:calc(800px * (13 / 640));margin-bottom:calc(800px * (10 / 640));width:calc(800px * (50 / 640));height:calc(800px * (1 / 640));display:block;background-color:#afafaf;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual dl.product_info dd.information p.product_category{
+          font-size:calc(800px * (18 / 640));line-height:calc(800px * (21 / 640));width:100%;height:auto;display:block;letter-spacing:calc(800px * (-1.08 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.like_info{
+          position:absolute;right:calc(800px * (20 / 640));top:calc(800px * (20 / 640));display:block;height:auto;width:auto;z-index:9;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.like_info img.like_icon{
+          display:block;width:calc(800px * (23 / 640));height:calc(800px * (19 / 640));
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.like_info p.count{
+          margin-top:calc(800px * (3 / 640));width:100%;height:auto;text-align:center;font-size:calc(800px * (17 / 640));line-height:1.6;letter-spacing:calc(800px * (-0.17 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data{
+          position:absolute;width:auto;height:auto;bottom:calc(800px * (21 / 640));right:calc(800px * (21 / 640));display:block;text-align:right;z-index:8
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.due_date{
+          width:auto;font-size:calc(800px * (51 / 640));line-height:1.14;height:auto;letter-spacing:calc(800px * (-1.28 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info{
+          margin-top:calc(800px * (8 / 640));width:auto;height:auto;letter-spacing:calc(800px * (-1 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part{
+          width:auto;font-size:calc(800px * (20 / 640));line-height:calc(800px * (29 / 640));height:auto;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_part em{
+          width:auto;font-size:calc(800px * (24 / 640));line-height:calc(800px * (29 / 640));height:auto;letter-spacing:calc(800px * (-1.2 / 640))
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.divider{
+          font-size:calc(800px * (20 / 640));padding:0 calc(800px * (4 / 640));line-height:calc(800px * (29 / 640));height:auto;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total{
+          width:auto;font-size:calc(800px * (20 / 640));line-height:calc(800px * (29 / 640));height:auto;
+     }
+     div#search_wrap section.search_result_product article.recommend_item_area div.recommend_item_list div.recommend_item_indiviual div.apply_data p.apply_info span.apply_total em{
+          width:auto;font-size:calc(800px * (24 / 640));line-height:calc(800px * (29 / 640));height:auto;letter-spacing:calc(800px * (-1.2 / 640))
+     }
+     div#search_wrap section.search_result_product article.result_list_area{
+          margin-top:calc(800px * (66 / 640));height:auto;display:block;height:auto;padding:0;
+     }
+     div#search_wrap section.search_result_product article.result_list_area h2{
+          width:100%;height:auto;font-size:calc(800px * (20 / 640));line-height:1.35;padding-bottom:calc(800px * (12 / 640));border-bottom:calc(800px * (1 / 640)) solid #000;letter-spacing:calc(800px * (-0.4 / 640))
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual{
+          margin-top:calc(800px * (30 / 640));width:100%;height:calc(800px * (480 / 640));border-radius:calc(800px * (30 / 640));box-shadow:0 3px 10px 0 rgba(0,0,0,0.4);background-color:#b5b5b5;position:relative;padding:calc(800px * (29 / 640));color:white;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.fade_dark{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:2;background-color:rgba(0,0,0,0.4);border-radius:calc(800px * (30 / 640))
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual img.item_background{
+          width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:0;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual img.item_img{
+          width:calc(800px * (412 / 640));height:calc(800px * (309 / 640));display:block;position:absolute;left:0;right:0;bottom:0;top:0;margin:auto;z-index:0;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info{
+          width:50%;height:auto;display:block;position:relative;z-index:4
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info{
+          width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info{
+          display:flex;width:100%;height:auto;flex-flow:row wrap;justify-content:flex-start;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info ul.score{
+          width:auto;display:inline-flex;height:auto;flex-flow:row wrap;justify-content:flex-start;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li{
+          width:calc(800px * (15 / 640));height:calc(800px * (14 / 460));margin-right:calc(800px * (3 / 640));display:block;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info ul.score li > img{
+          display:block;width:100%;height:auto;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info div.score_info span.score_value{
+          font-size:calc(800px * (15 / 640));line-height:1;color:white;width:auto;height:auto;padding-left:calc(800px * (4 / 640));letter-spacing:calc(800px * (-0.9 / 640))
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dt.extra_info p.review_count{
+          margin-top:calc(800px * (10 / 640));width:100%;height:auto;display:block;font-size:calc(800px * (18 / 640));line-height:1.22;letter-spacing:calc(800px * (-0.18 / 640))
+     }
+
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information{
+          margin-top:calc(800px * (36/ 640));width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.product_title{
+          width:100%;height:auto;display:block;font-size:calc(800px * (18 / 640));line-height:1;letter-spacing:calc(800px * (-0.36 / 640))
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.product_desc{
+          margin-top:calc(800px * (12 / 640));width:100%;height:auto;display:block;font-size:calc(800px *(20 / 640));line-height:1.2;letter-spacing:calc(800px * (-1 / 640))
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.sep_deco{
+          margin-top:calc(800px * (13 / 640));margin-bottom:calc(800px * (11 / 640));width:calc(800px * (50 / 640));height:calc(800px * (1 / 640));background-color:#efefef;display:block;
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual dl.product_info dd.information p.product_category{
+          font-size:calc(800px * (18 / 640));line-height:calc(800px * (21 / 640));display:block;width:100%;height:auto;letter-spacing:calc(800px * (-1.08 / 640))
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.like_info{
+          right:calc(800px * (20 / 640));top:calc(800px * (20 / 640));display:block;width:auto;height:auto;position:absolute;z-index:9
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.like_info img{
+          display:block;width:calc(800px * (23 / 640));height:calc(800px * (19 / 640));
+     }
+     div#search_wrap section.search_result_product article.result_list_area div.result_item_indiviual div.like_info p.count{
+          margin-top:calc(800px * (3 / 640));width:100%;height:auto;text-align:center;font-size:calc(800px * (17 / 640));line-height:1.6;letter-spacing:calc(800px * (-0.17 / 640))
+     }
+
+     /*해시태그 검색결과 페이징 영역>사용자 검색 결과 연관사용자*/
+     div#search_wrap section.search_result_users{
+          padding:calc(800px * (98 / 640)) 0;width:100%;height:auto;display:block;
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item{
+          width:100%;height:auto;display:block;padding-bottom:calc(800px * (27 / 640));margin:0 auto;margin-bottom:calc(800px * (21 / 640));border-bottom:1px solid #a8a8a8;
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container{
+          width:100%;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;position:relative;
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.clown_rank{
+          width:calc(800px * (95 / 640));height:calc(800px * (120 / 640));display:block;text-align:center;padding-top:calc(800px * (26 / 640));
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.clown_rank img{
+          width:calc(800px * (39 / 640));height:calc(800px * (24 / 640));display:block;margin:0 auto;background-color:#000;
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.clown_rank p.rank_value{
+          width:100%;display:block;margin-top:calc(800px * (14 / 640));text-align:center;color:#000;font-size:calc(800px * ( 30 / 640));line-height:1.1;
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.reviewer_profile_img{
+          width:calc(800px * (120 / 640));height:calc(800px * (120 / 640));display:block;border-radius:50%;
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dt.reviewer_profile_img img{
+          width:100%;height:100%;display:block;border-radius:50%;
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.reviewer_profile_info{
+          width:calc(800px * (320 / 640));height:calc(800px * (120 / 640));padding-left:calc(800px * (14 / 640));padding-top:calc(800px * (40 / 640));
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h2{
+          font-size:calc(800px * (22 / 640));line-height:1.23;color:#000;letter-spacing:calc(800px * (-0.22 / 640))
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.reviewer_profile_info h4{
+          font-size:calc(800px * (18 / 640));line-height:1.5;color:#6e6e6e;margin-top:calc(800px * (6 / 640));letter-spacing:calc(800px * (-0.36 / 640))
+     }
+     div#search_wrap section.search_result_users article.reviewer_rank_item dl.info_container dd.follow_btn{
+          position:absolute;right:0;top:calc(800px * (28 / 640));width:calc(800px * (65 / 640));height:calc(800px * (65 / 640));background-color:#68c0b5;border-radius:50%;display:flex;font-size:calc(800px * (17 / 640));line-height:1.18;color:white;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;letter-spacing:calc(800px * (-1.02 / 640))
+     }
+}
